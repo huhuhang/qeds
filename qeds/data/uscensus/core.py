@@ -12,7 +12,7 @@ _ensure_dir(options["uscensus.data_dir"])
 
 
 def _update_data_file():
-    url = "https://api.census.gov/data.json"
+    url = "https://labfile.oss.aliyuncs.com/courses/2781/data.json"
     r = requests.get(url)
     file_path = os.path.join(options["uscensus.data_dir"], "data.json")
     with open(file_path, "w") as f:
