@@ -209,8 +209,9 @@ def _get_airline_data(url):
 
 
 def _retrieve_airline_performance_dec16():
-    url = "https://datascience.quantecon.org/assets/data/"
-    url += "December2016_ontimeflights.csv.zip"
+#     url = "https://datascience.quantecon.org/assets/data/"
+#     url += "December2016_ontimeflights.csv.zip"
+    url = "https://labfile.oss.aliyuncs.com/courses/2781/December2016_ontimeflights.csv.zip"
     return _get_airline_data(url)
 
 
