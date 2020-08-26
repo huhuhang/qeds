@@ -146,8 +146,9 @@ def _retrieve_state_industry_employment():
 
 def _retrieve_goodreads_books():
     LOGGER.debug("Downloading goodreads books.csv from github")
-    url = "https://raw.githubusercontent.com/zygmuntz/goodbooks-10k/"
-    url += "c8a6e0a9a3b620c3f89301b0b3dc2a6653972294/books.csv"
+#     url = "https://raw.githubusercontent.com/zygmuntz/goodbooks-10k/"
+#     url += "c8a6e0a9a3b620c3f89301b0b3dc2a6653972294/books.csv"
+    url = "https://labfile.oss.aliyuncs.com/courses/2781/books.csv"
     return pd.read_csv(url), dict(index=[])
 
 
