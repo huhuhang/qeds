@@ -153,8 +153,9 @@ def _retrieve_goodreads_books():
 
 def _retrieve_goodreads_ratings():
     LOGGER.debug("Downloading goodreads ratings.csv from github")
-    url = "https://raw.githubusercontent.com/zygmuntz/goodbooks-10k/"
-    url += "c8a6e0a9a3b620c3f89301b0b3dc2a6653972294/ratings.csv"
+#     url = "https://raw.githubusercontent.com/zygmuntz/goodbooks-10k/"
+#     url += "c8a6e0a9a3b620c3f89301b0b3dc2a6653972294/ratings.csv"
+    url = "https://labfile.oss.aliyuncs.com/courses/2781/ratings.csv"
     return pd.read_csv(url), dict(index=[])
 
 
